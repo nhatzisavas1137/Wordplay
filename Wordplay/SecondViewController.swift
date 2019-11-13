@@ -8,13 +8,15 @@
 
 import UIKit
 class SecondViewController: UIViewController {
-    var ending: String! = nil
+    var verb2: String! = nil
+    var adjective2: String! = nil
+    var noun2: String! = nil
     var beginning: String! = nil
     @IBOutlet weak var label2: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .init(red: 20/255, green: 206/255, blue: 219/255, alpha: 1.0)
-        label2.text = beginning + ending
+        label2.text = beginning
     }
     /*
     // MARK: - Navigation
