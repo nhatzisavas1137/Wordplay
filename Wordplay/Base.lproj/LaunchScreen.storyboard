@@ -29,7 +29,7 @@
                         <constraints>
                             <constraint firstItem="FEV-7J-SRt" firstAttribute="top" secondItem="wIk-JF-kgF" secondAttribute="bottom" constant="15" id="2Iu-Tb-yIv"/>
                             <constraint firstItem="FEV-7J-SRt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dep-be-n7U"/>
-                            <constraint firstItem="wIk-JF-kgF" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="t2V-Ap-nGg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wIk-JF-kgF" secondAttribute="bottom" constant="550" id="moO-9i-kdR"/>
                             <constraint firstItem="wIk-JF-kgF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vNC-Bs-pLe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
