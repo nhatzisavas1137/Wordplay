@@ -22,7 +22,9 @@ class SecondViewController: UIViewController {
         if verb2 == "" || adjective2 == "" || noun2 == "" || verb2 == " " || adjective2 == " " || noun2 == " " {
             let errorAlert = UIAlertController(title: "Error", message: "Please enter text into all fields", preferredStyle: .alert)
             errorAlert.addAction(action1)
+            label2.text = "ERROR"
             self.present(errorAlert, animated: true, completion: nil)
+            return
         }
         if beginning.contains(wordLookFor2) == false && wordLookFor2 != "" {
             let findWordAlert = UIAlertController(title: "Word Not Found", message: "Your word was not found in the sentence 😭", preferredStyle: .alert)
