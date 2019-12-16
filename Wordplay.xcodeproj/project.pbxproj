@@ -15,6 +15,8 @@
 		3DC5B0112379CB84008D5AE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5B00F2379CB84008D5AE9 /* Main.storyboard */; };
 		3DC5B0132379CB86008D5AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5B0122379CB86008D5AE9 /* Assets.xcassets */; };
 		3DC5B0162379CB86008D5AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC5B0142379CB86008D5AE9 /* LaunchScreen.storyboard */; };
+		3DD08F4423A15E420005307D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08F4323A15E420005307D /* FourthViewController.swift */; };
+		3DD08F4623A15E5C0005307D /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD08F4523A15E5C0005307D /* FifthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		3DC5B0122379CB86008D5AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC5B0152379CB86008D5AE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC5B0172379CB86008D5AE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD08F4323A15E420005307D /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		3DD08F4523A15E5C0005307D /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				3DC5B00B2379CB84008D5AE9 /* SceneDelegate.swift */,
 				3DC5B00D2379CB84008D5AE9 /* ViewController.swift */,
 				3DC5B00F2379CB84008D5AE9 /* Main.storyboard */,
+				3DD08F4523A15E5C0005307D /* FifthViewController.swift */,
+				3DD08F4323A15E420005307D /* FourthViewController.swift */,
 				3DB794A3237B1CDA008EB87E /* SecondViewController.swift */,
 				3D4C58A12385AD18002A78B5 /* ThirdViewController.swift */,
 				3DC5B0122379CB86008D5AE9 /* Assets.xcassets */,
@@ -144,11 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD08F4423A15E420005307D /* FourthViewController.swift in Sources */,
 				3DB794A4237B1CDA008EB87E /* SecondViewController.swift in Sources */,
 				3DC5B00E2379CB84008D5AE9 /* ViewController.swift in Sources */,
 				3D4C58A22385AD19002A78B5 /* ThirdViewController.swift in Sources */,
 				3DC5B00A2379CB84008D5AE9 /* AppDelegate.swift in Sources */,
 				3DC5B00C2379CB84008D5AE9 /* SceneDelegate.swift in Sources */,
+				3DD08F4623A15E5C0005307D /* FifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZDLGP6PZRL;
 				INFOPLIST_FILE = Wordplay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZDLGP6PZRL;
 				INFOPLIST_FILE = Wordplay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

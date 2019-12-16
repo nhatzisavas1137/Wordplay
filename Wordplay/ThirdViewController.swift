@@ -46,25 +46,36 @@ class ThirdViewController: UIViewController {
                 self.present(findWordAlert, animated: true, completion: nil)
             }
             if lookFor == "" {
-                return
+                let findWordAlert = UIAlertController(title: "ERROR", message: "No word entered", preferredStyle: .alert)
+                findWordAlert.addAction(action1)
+                self.present(findWordAlert, animated: true, completion: nil)
             }
         }
     }
     @IBAction func replaceButtonPressed(_ sender: Any) {
-        if lookForField.text != "" || replaceWithField.text != "" {
+        if lookForField.text != "" && replaceWithField.text != "" {
             let lookFor = lookForField.text!
             let replaceWith = replaceWithField.text!
-            if beginning.contains(lookFor) == true {
+            if beginning.contains(lookFor) == true && replaceWith != ""{
                 let replacedString = beginning.replacingOccurrences(of: lookFor, with: replaceWith)
                 beginning = replacedString
                 labelView3.text = beginning
                 return
             }
-            if beginning.contains(lookFor) != true {
+            if beginning.contains(lookFor) != true{
                 let errorAlert = UIAlertController(title: "Error", message: "The word you entered cannot be found in the sentence 😭", preferredStyle: .alert)
                 errorAlert.addAction(action1)
                 self.present(errorAlert, animated: true, completion: nil)
             }
+            if replaceWith == "" || replaceWith == " "{
+                let findWordAlert = UIAlertController(title: "ERROR", message: "No word entered", preferredStyle: .alert)
+                findWordAlert.addAction(action1)
+                self.present(findWordAlert, animated: true, completion: nil)
+            }
         }
+        else {
+            let findWordAlert = UIAlertController(title: "ERROR", message: "No word entered", preferredStyle: .alert)
+            findWordAlert.addAction(action1)
+            self.present(findWordAlert, animated: true, completion: nil)}
     }
 }

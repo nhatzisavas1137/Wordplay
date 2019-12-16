@@ -18,7 +18,7 @@ class ViewController: UIViewController, UIApplicationDelegate {
     var adjective1 = "(adjective)"
     var verb1 = "(verb)"
     var noun1 = "(noun)"
-    var check = false
+    var check = 2
     override func viewDidLoad() {
         super.viewDidLoad()
         let sentenceBeginning: String = "My " + adjective1 + " " + noun1 + " wants to " + verb1
@@ -31,11 +31,14 @@ class ViewController: UIViewController, UIApplicationDelegate {
         textField4.placeholder = "Look For Word"
     }
     @IBAction func button1Pressed(_ sender: Any) {
-        check = true
+        check = 1
         performSegue(withIdentifier: "segue1", sender: self)
     }
+    @IBAction func MVPTransition(_ sender: Any) {
+        check = 3
+    }
     @IBAction func button2Pressed(_ sender: Any) {
-        check = false
+        check = 2
         performSegue(withIdentifier: "segue2", sender: self)
     }
     override func prepare(for segue1: UIStoryboardSegue, sender: Any?) {
@@ -44,17 +47,20 @@ class ViewController: UIViewController, UIApplicationDelegate {
         let noun1 = textField2.text!
         let wordLookFor1 = textField4.text!
         let sentenceBeginning: String = "My " + adjective1 + " " + noun1 + " wants to " + verb1
-        if check == true {let NVC = segue1.destination as! SecondViewController
+        if check == 1 {let NVC = segue1.destination as! SecondViewController
             NVC.adjective2 = adjective1
             NVC.verb2 = verb1
             NVC.noun2 = noun1
             NVC.wordLookFor2 = wordLookFor1
             NVC.beginning = sentenceBeginning}
-        if check == false {let NVC = segue1.destination as! ThirdViewController
+        if check == 2 {let NVC = segue1.destination as! ThirdViewController
             NVC.adjective2 = adjective1
             NVC.verb2 = verb1
             NVC.noun2 = noun1
             NVC.beginning = sentenceBeginning
+        }
+        if check == 3 {
+            let NVC = segue1.destination as! FourthViewController
         }
     }
 }
